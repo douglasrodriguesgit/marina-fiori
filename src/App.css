@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap");
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100vw;
+  height: 100vh;
+
+  --type-fisrt-regular: roboto, sans-serif;
+  --type-first-medium: roboto, sans-serif;
+  --type-second: Poppins, sans-serif;
+  --type-third: moon dance;
+
+  --type-color-0: #fff9f9;
+  --type-color-1: #c9c7c1;
+  --type-color-2: #bcbcb3;
+  --type-color-3: #95998a;
+  --type-color-4: #96998a;
+  --type-color-5: #73766a;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+span,
+header,
+a,
+nav,
+footer,
+button,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.title {
+  font-family: var(--type-third);
+  font-size: 4rem;
+  color: var(--type-color-5);
+}
+
+.subtitle {
+  font-family: var(--type-fisrt-regular);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--type-color-2);
+}
+
+.menu {
+  font-family: var(--type-second);
+  font-size: 1.25rem;
+  color: var(--type-color-4);
+  font-weight: 500;
+}
