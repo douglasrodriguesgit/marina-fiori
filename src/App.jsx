@@ -1,8 +1,12 @@
-import React from 'react';
-import './App.css'
+import React from "react";
+import "./App.css";
 
 const App = () => {
-  return <div>App React</div>;
+  return (
+    <div>
+      <h1 className="title">Beleza e saúde das unhas</h1>
+    </div>
+  );
 };
 
 export default App;
