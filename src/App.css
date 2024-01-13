@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap");
 
 body {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   width: 100vw;
   height: 100vh;
 
