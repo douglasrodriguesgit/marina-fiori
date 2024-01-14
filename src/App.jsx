@@ -2,11 +2,12 @@ import React from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Components/Home";
-import Portfolio from "./Components/Portfolio";
-import Price from "./Components/Price";
-import AboutMe from "./Components/AboutMe";
-import Testimony from "./Components/Testimony";
+import Home from "./Components/Home/Home";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Price from "./Components/Price/Price";
+import AboutMe from "./Components/AboutMe/AboutMe";
+import Testimony from "./Components/Testimony/Testimony";
+import Whatsapp from "./Components/Whatsapp/Whatsapp";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="meconheca" element={<AboutMe />} />
           <Route path="preco" element={<Price />} />
           <Route path="depoimentos" element={<Testimony />} />
+          <Route path="whatsapp" element={<Whatsapp />} />
         </Routes>
       </BrowserRouter>
     </div>
