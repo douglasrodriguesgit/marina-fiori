@@ -3,10 +3,12 @@
 body {
   max-width: 100vw;
   max-height: 100vh;
-  color: #FBFBFB;
+  color: #fbfbfb;
+  /* border: solid 1px var(--type-color-1);
+  border-radius: 30px; */
 
   --type-fisrt-regular: roboto, sans-serif;
-  --type-first-medium: roboto, sans-serif;  
+  --type-first-medium: roboto, sans-serif;
   --type-third: moon dance;
 
   --type-color-0: #fff9f9;
@@ -46,8 +48,6 @@ link {
   color: var(--type-color-4);
 }
 
-
-
 img {
   max-height: 100%;
   max-width: 100%;
@@ -68,6 +68,6 @@ img {
   color: var(--type-color-2);
 }
 
-h1{
+h1 {
   color: var(--type-color-5);
 }

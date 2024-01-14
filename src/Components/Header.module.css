@@ -1,38 +1,38 @@
-.header {
-  display: grid;
-  grid-template-columns: repeat(12 1fr);
-  flex: 1;
-  align-items: center;
+.header,
+.header nav {
+  display: flex;
   justify-content: space-between;
-  margin-top: 2.06rem;
+  align-items: center;
+  margin: 1.5rem 0;
 }
 
-.header link {
+.nav a {
   cursor: pointer;
 }
 
-.brand {
-  grid-column: 2/3;
+.header .brand {
+  margin-left: 6.18rem;
+  margin-right: 2.78rem;
+  margin-bottom: 0.5rem;
 }
 
-.nav {
+.header .links {
+  display: flex;
+  flex-wrap: wrap;
   font-family: Poppins;
   font-size: 1.25rem;
   font-weight: 500;
-  display: flex;
-  grid-column: 4/8;
 }
 
 .nav li {
   margin: 0 2.5rem;
-  padding: 0.4rem;
 }
 
-.contact {
-  grid-column: 8/12;
+li .contact {
+  margin-left: 12rem;
 }
 
-.nav a::after {
+.nav li a::after {
   content: "";
   display: block;
   background-color: #c9c7c1;
@@ -41,29 +41,24 @@
   margin-top: 4px;
 }
 
-.nav a:hover::after {
+.nav li a:hover::after {
   width: 100%;
   transition: 0.3s;
 }
 
-.nav a:global(.active)::after {
+.nav li a:global(.active)::after {
   background-color: #95998a;
   height: 2px;
   width: 100%;
   margin-top: 4px;
 }
 
-@media (max-width: 61rem) {
-  .nav a,
-  .contact {
-    display: none;
-  }
+li .contact::after {
+  display: none !important;
+}
 
-  .hamburguer {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 2px;
-    background-color: #95998a;
+@media (max-width: 81rem) {
+  li .contact {
+    margin-left: 0rem;
   }
 }
