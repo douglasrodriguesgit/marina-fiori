@@ -59,15 +59,23 @@ img {
   font-family: var(--type-third);
   font-size: 4rem;
   color: var(--type-color-5);
+  margin: 2.5rem 0;
 }
 
 .subtitle {
   font-family: var(--type-fisrt-regular);
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--type-color-2);
+  color: var(--type-color-1);
 }
 
-h1 {
-  color: var(--type-color-5);
+@media (max-width: 45rem) {
+  .title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
 }
