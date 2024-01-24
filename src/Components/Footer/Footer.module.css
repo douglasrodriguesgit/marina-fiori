@@ -1,0 +1,104 @@
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr 4fr;
+  background-color: var(--type-color-4);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.titleFooter {
+  font-family: var(--type-fisrt-regular);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--type-color-0);
+}
+
+.brand {
+  margin-top: 0.5rem;
+  margin-left: 10rem;
+}
+
+.openingHours {
+  margin-left: 7rem;
+  margin-top: 0.5rem;
+}
+
+.openingHours p {
+  margin-top: 0.5rem;
+}
+
+.openingHours span {
+  margin-left: 2.87rem;
+}
+.data {
+  margin-top: 0.5rem;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+}
+
+.redes li:nth-child(2) {
+  margin-left: 0.94rem;
+}
+
+.redes li:nth-child(3) {
+  margin-left: 0.94rem;
+}
+
+.map {
+  margin-top: 0.5rem;
+}
+
+.data h4::after,
+.map h4::after {
+  content: "";
+  display: block;
+  width: 9rem;
+  height: 0.125rem;
+  background-color: #9a9f8d;
+  margin-top: 0.25rem;
+  margin-bottom: 1.12rem;
+}
+
+.openingHours h4::after {
+  content: "";
+  display: block;
+  width: 16rem;
+  height: 0.125rem;
+  background-color: #9a9f8d;
+  margin-top: 0.25rem;
+  margin-bottom: 1.12rem;
+}
+
+@media (max-width: 81rem) {
+  .brand {
+    display: none;
+  }
+  .data {
+    margin-left: 2rem !important;
+  }
+}
+
+@media (max-width: 68rem) {
+  .openingHours {
+    margin-left: 2rem;
+  }
+
+  .map {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 52.5rem) {
+  .data {
+    display: none !important;
+  }
+
+  .map {
+    margin-left: 1rem;
+  }
+}
