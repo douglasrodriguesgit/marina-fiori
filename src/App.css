@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap");
 
 body {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  color: #fbfbfb;
   --type-fisrt-regular: roboto, sans-serif;
   --type-first-medium: roboto, sans-serif;
   --type-third: moon dance;
+  background-color: #fbfbfb;
 
   --type-color-0: #fff9f9;
   --type-color-1: #c9c7c1;
@@ -58,7 +55,7 @@ img {
   font-family: var(--type-third);
   font-size: 4rem;
   color: var(--type-color-5);
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .subtitle {
@@ -67,5 +64,3 @@ img {
   font-weight: 400;
   color: var(--type-color-1);
 }
-
-

@@ -4,6 +4,7 @@
   margin-bottom: 6rem;
 }
 
+
 .info {
   grid-column: 1;
   margin-left: 27rem;
@@ -12,12 +13,12 @@
 
 .image {
   grid-column: 2;
-  margin-bottom: 1rem;
   margin-left: 0px;
+
 }
 
 .text {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .button {
@@ -50,17 +51,23 @@
   margin-bottom: -100px;
 }
 
+
+@media (max-width: 81rem) {
+  .info {
+    margin-left: 7rem;
+  }
+
+}
+
 @media (max-width: 68rem) {
   .container {
     grid-template-columns: 1fr 1fr;
   }
 
-  .info {
-    margin-left: 3rem;
-  }
 
   .info {
     max-width: 20rem;
+    margin-left: 2rem;
   }
 }
 

@@ -2,10 +2,8 @@
   display: grid;
   grid-template-columns: 2fr 4fr 2fr 4fr;
   background-color: var(--type-color-4);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   padding: 1rem;
+  margin-top: 8rem;
 }
 
 .titleFooter {
@@ -21,8 +19,9 @@
 }
 
 .openingHours {
-  margin-left: 7rem;
+  margin-left: 6rem;
   margin-top: 0.5rem;
+  color: var(--type-color-1);
 }
 
 .openingHours p {
@@ -34,6 +33,7 @@
 }
 .data {
   margin-top: 0.5rem;
+  margin-left: -2rem;
 }
 
 .redes {
