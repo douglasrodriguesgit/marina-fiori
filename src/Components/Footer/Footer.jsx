@@ -4,6 +4,7 @@ import Brand from "../../Assets/icons/brandLight.svg?react";
 import WhatsApp from "../../Assets/redes/whatsappDark.svg?react";
 import Tiktok from "../../Assets/redes/tiktok.svg?react";
 import Instagram from "../../Assets/redes/instagram.svg?react";
+import Map from "../Map/Map";
 
 const Footer = () => {
   return (
@@ -37,6 +38,7 @@ const Footer = () => {
       </div>
       <div className={styles.map}>
         <h4 className={styles.titleFooter}>Localização</h4>
+        <Map />
       </div>
     </footer>
   );
