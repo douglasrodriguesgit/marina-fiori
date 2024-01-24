@@ -1,20 +1,23 @@
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin-bottom: 6rem;
 }
 
 .info {
   grid-column: 1;
-  margin-left: 19.25rem;
-  max-width: 23.875rem;
+  margin-left: 27rem;
+  max-width: 25rem;
 }
 
 .image {
   grid-column: 2;
+  margin-bottom: 1rem;
+  margin-left: 0px;
 }
 
 .text {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .button {
@@ -44,16 +47,20 @@
 
 .image {
   background: url(../../Assets/image/intro.svg) no-repeat;
-  margin-bottom: -200px;
+  margin-bottom: -100px;
 }
 
-@media (max-width: 61.25rem) {
+@media (max-width: 68rem) {
   .container {
     grid-template-columns: 1fr 1fr;
   }
 
   .info {
     margin-left: 3rem;
+  }
+
+  .info {
+    max-width: 20rem;
   }
 }
 

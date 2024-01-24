@@ -8,6 +8,7 @@ import Price from "./Components/Price/Price";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Testimony from "./Components/Testimony/Testimony";
 import Whatsapp from "./Components/Whatsapp/Whatsapp";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="depoimentos" element={<Testimony />} />
           <Route path="whatsapp" element={<Whatsapp />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
