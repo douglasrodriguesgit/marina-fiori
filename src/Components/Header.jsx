@@ -12,7 +12,7 @@ const Header = () => {
           {" "}
           <Brand />
         </NavLink>
-        <ul className={`${styles.links} ${styles.hamburguer} `}>
+        <ul className={styles.links}>
           <li>
             {" "}
             <NavLink to="/portfolio"> Portfólio</NavLink>{" "}

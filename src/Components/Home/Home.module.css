@@ -4,7 +4,6 @@
   margin-bottom: 6rem;
 }
 
-
 .info {
   grid-column: 1;
   margin-left: 27rem;
@@ -14,7 +13,6 @@
 .image {
   grid-column: 2;
   margin-left: 0px;
-
 }
 
 .text {
@@ -51,19 +49,16 @@
   margin-bottom: -100px;
 }
 
-
 @media (max-width: 81rem) {
   .info {
     margin-left: 7rem;
   }
-
 }
 
 @media (max-width: 68rem) {
   .container {
     grid-template-columns: 1fr 1fr;
   }
-
 
   .info {
     max-width: 20rem;
@@ -72,15 +67,30 @@
 }
 
 @media (max-width: 45rem) {
+  .container {
+    margin-bottom: 2rem;
+  }
   .image {
     display: none;
   }
 
   .text {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
+
   .button {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+
+  .info {
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 41rem) {
+  .button {
+    font-size: 0.875rem;
+    padding: 0.3rem;
   }
 }
