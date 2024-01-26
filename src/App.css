@@ -64,3 +64,15 @@ img {
   font-weight: 400;
   color: var(--type-color-1);
 }
+
+@media (max-width: 41rem) {
+  .title {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
