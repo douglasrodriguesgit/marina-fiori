@@ -2,17 +2,29 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Brand from "../Assets/icons/brand.svg?react";
 import Contact from "../Assets/redes/whatsappLight.svg?react";
-import styles from "./Header.module.css";
 
 const Header = () => {
+  const [open, setOpen] = React.useState(false);
+
+  function handleClick() {
+    setOpen((open) => !open);
+  }
+
+  console.log(open);
+
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
-        <NavLink className={styles.brand} to="/" end>
-          {" "}
-          <Brand />
-        </NavLink>
-        <ul className={styles.links}>
+    <header className="header">
+      <NavLink className="brand" to="/" end>
+        {" "}
+        <Brand />
+      </NavLink>
+
+      <button className="mobile" onClick={handleClick}>
+        Menu
+      </button>
+
+      <nav className="nav">
+        <ul className={` ${open ? "active" : ""} `}>
           <li>
             {" "}
             <NavLink to="/portfolio"> Portfólio</NavLink>{" "}
@@ -30,7 +42,7 @@ const Header = () => {
           </li>
 
           <li>
-            <NavLink className={styles.contact} to="/whatsapp">
+            <NavLink className="contact" to="/whatsapp">
               <Contact />
             </NavLink>
           </li>
