@@ -8,7 +8,13 @@ const Portfolio = () => {
         title="Portfolio"
         description="Conheça o portfolio de Marina Fiori"
       />
-      <h1>Portfolio</h1>
+      <section className="container">
+        <h1 className="title">Portfólio</h1>
+        <div className="slide">
+          
+
+        </div>
+      </section>
     </div>
   );
 };
