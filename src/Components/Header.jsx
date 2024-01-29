@@ -10,8 +10,6 @@ const Header = () => {
     setOpen((open) => !open);
   }
 
-  console.log(open);
-
   return (
     <header className="header">
       <NavLink className="brand" to="/" end>
@@ -19,12 +17,13 @@ const Header = () => {
         <Brand />
       </NavLink>
 
-      <button className="mobile" onClick={handleClick}>
-        Menu
-      </button>
+      <button
+        className={` ${"mobile"} ${open ? "activeMobile" : ""} `}
+        onClick={handleClick}
+      ></button>
 
       <nav className="nav">
-        <ul className={` ${open ? "active" : ""} `}>
+        <ul className={` ${open ? "activeMobile" : ""} `}>
           <li>
             {" "}
             <NavLink to="/portfolio"> Portfólio</NavLink>{" "}
