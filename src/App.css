@@ -144,8 +144,17 @@ li .contact::after {
   }
 
   .mobile {
-    display: flex;
-    margin-left: 70%;
+    display: block;
+    position: absolute;
+    right: 0px;
+  }
+
+  .nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+
+    width: 100%;
   }
 
   .header .links {
@@ -154,7 +163,8 @@ li .contact::after {
   }
 
   nav a {
-    display: none;
+    display: block;
+    visibility: hidden;
   }
 
   .nav ul {
@@ -164,10 +174,23 @@ li .contact::after {
   .active a {
     display: block;
     flex-wrap: initial;
-    padding: 0px;
+    padding: 1rem 0;
     margin-top: 2rem;
-    margin-bottom: 40px;
-    
+    margin-bottom: 60px;
+    z-index: 10000;
+    width: 100%;
+    visibility: visible;
+    transition: 0.6s;
+    border-bottom: solid 1px #dcdcdc;
+   
+  }
+
+  .active {
+    background-color: #e7e7e7;
+  }
+
+  .header .brand {
+    background-color: initial !important;
   }
 }
 
