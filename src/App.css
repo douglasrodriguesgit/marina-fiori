@@ -77,13 +77,13 @@ img {
   margin-left: 10rem;
 }
 
-.nav a {
-  cursor: pointer;
-}
-
 .header .brand {
   margin-right: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.nav a {
+  cursor: pointer;
 }
 
 .nav ul {
@@ -124,48 +124,44 @@ li .contact::after {
   display: none !important;
 }
 
-.mobile {
+.menuHamburguer {
   display: none;
 }
+
+.menuHamburguer.menuClose {
+  border-top-color: transparent !important;
+}
+
+.menuClose::before {
+  transform: rotate(135deg);
+}
+
+.menuClose::after {
+  transform: rotate(-135deg);
+  top: -7px;
+  position: relative;
+}
+
 
 @media (max-width: 84rem) {
   .header .brand {
     margin-left: -3rem;
   }
-
   .nav ul {
     margin-right: 1rem;
   }
 }
 
+
 @media (max-width: 72rem) {
+  .header .links {
+    display: block;
+    margin: 0 auto;
+  }
+
   .header .brand {
     margin-left: -8.2rem;
     margin-right: 0rem;
-  }
-
-  .mobile {
-    display: block;
-    position: absolute;
-    right: 0;
-    background-color: #000;
-    cursor: pointer;
-    border: solid 1px;
-    width: 20px;
-    height: 2.1px;
-    margin-bottom: 4%;
-  }
-
-
-
-  .mobile::after,
-  .mobile::before {
-    content: "";
-    display: block;
-    background-color: currentColor;
-    width: 20px;
-    height: 2px;
-    margin-top: 5px;
   }
 
   .nav ul {
@@ -173,11 +169,6 @@ li .contact::after {
     top: 70px;
     right: 0px;
     width: 100%;
-  }
-
-  .header .links {
-    display: block;
-    margin: 0 auto;
   }
 
   nav a {
@@ -188,8 +179,28 @@ li .contact::after {
   .nav ul {
     display: block;
   }
+  .menuHamburguer {
+    display: block;
+    position: absolute;
+    content: "";
+    right: 0;
+    cursor: pointer;
+    border-top: 2.4px solid #000;
+    width: 25px;
+    margin-bottom: 4%;
+  }
 
-  .activeMobile a {
+  .menuHamburguer::after,
+  .menuHamburguer::before {
+    content: "";
+    display: block;
+    background-color: #000;
+    width: 25px;
+    height: 2px;
+    margin-top: 5px;
+  }
+
+  .menuOpen a {
     display: block;
     flex-wrap: initial;
     padding: 1rem 0;
@@ -202,16 +213,18 @@ li .contact::after {
     border-bottom: solid 1px #dcdcdc;
   }
 
-  .activeMobile {
+  .menuOpen {
     background-color: var(--type-color-0);
   }
 }
+
 
 @media (max-width: 41rem) {
   .header .brand {
     margin-bottom: 0rem;
   }
 }
+
 
 @media (max-width: 41rem) {
   .title {
@@ -225,8 +238,9 @@ li .contact::after {
   }
 }
 
+
 @media (max-width: 25rem) {
-  .mobile {
+  .menuHamburguer {
     margin-left: 50%;
   }
 }
