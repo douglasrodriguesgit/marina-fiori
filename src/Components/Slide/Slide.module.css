@@ -1,0 +1,30 @@
+.containerSlide {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.item {
+  flex-shrink: 0;
+  width: 80%;
+  margin: 0 10%;
+  padding: 10rem 0;
+  background-color: #eee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.nav span {
+  cursor: pointer;
+  padding: 1rem;
+}

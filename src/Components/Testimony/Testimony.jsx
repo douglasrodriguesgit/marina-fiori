@@ -1,11 +1,12 @@
 import React from "react";
 import Head from "../Head";
+import TitlePages from "../TitlePages";
 
 const Testimony = () => {
   return (
     <div>
       <Head title="Depoimentos" description="Depoimentos de nossos clientes" />
-      <h1>Depoimento</h1>
+      <TitlePages text="Depoimentos de nossos clientes" />
     </div>
   );
 };

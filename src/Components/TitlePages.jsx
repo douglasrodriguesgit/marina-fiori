@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import styles from './TitlePages.module.css'
 
-const TitlePages = () => {
-  return (
-    <h1 className='title'>
-      
-    </h1>
-  )
-}
+const TitlePages = (props) => {
+  return <h1 className={`${"title"} ${styles.titlePages}`}>{props.text}</h1>;
+};
 
-export default TitlePages
+export default TitlePages;
