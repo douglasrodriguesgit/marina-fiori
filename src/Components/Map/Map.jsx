@@ -14,7 +14,8 @@ const Map = () => {
       {isLoaded ? (
         <GoogleMap
           mapContainerStyle={{
-            width: "310px",
+            maxWidth: "310px",
+            minWidth: "220px",
             height: "100px",
             border: "solid 1px #9a9f8d",
             borderRadius: "0.5rem",

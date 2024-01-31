@@ -24,7 +24,6 @@ const Header = () => {
         className={` ${"menuHamburguer"} ${ativo ? "menuClose" : ""} `}
         onClick={handleClick}
       ></span>
-
       <nav className="nav">
         <ul className={` ${open ? "menuOpen" : ""} `}>
           <li>
