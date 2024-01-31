@@ -51,6 +51,7 @@
 
 .map {
   margin-top: 0.5rem;
+  width: 310px;
 }
 
 .data h4::after,
@@ -78,6 +79,10 @@
   .brand {
     display: none;
   }
+
+  .menuOpen footer {
+    width: 100%;
+  }
 }
 
 @media (max-width: 72rem) {
@@ -97,12 +102,13 @@
 
   .map {
     margin-left: -6rem;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 41rem) {
   .footer {
-    margin-top: 0rem;
+    margin-top: 4rem;
   }
 
   .titleFooter {
@@ -116,7 +122,8 @@
   }
 
   .data {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .map {

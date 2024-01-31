@@ -142,7 +142,6 @@ li .contact::after {
   position: relative;
 }
 
-
 @media (max-width: 84rem) {
   .header .brand {
     margin-left: -3rem;
@@ -151,7 +150,6 @@ li .contact::after {
     margin-right: 1rem;
   }
 }
-
 
 @media (max-width: 72rem) {
   .header .links {
@@ -206,25 +204,24 @@ li .contact::after {
     padding: 1rem 0;
     margin-top: 2rem;
     margin-bottom: 60px;
-    z-index: 10000;
+    z-index: 1000;
     width: 100%;
+    height: calc(100vh -70px);
     visibility: visible;
     transition: 0.6s;
     border-bottom: solid 1px #dcdcdc;
   }
 
-  .menuOpen {
+  .menuOpen  {
     background-color: var(--type-color-0);
   }
 }
-
 
 @media (max-width: 41rem) {
   .header .brand {
     margin-bottom: 0rem;
   }
 }
-
 
 @media (max-width: 41rem) {
   .title {
@@ -237,7 +234,6 @@ li .contact::after {
     font-size: 1.2rem;
   }
 }
-
 
 @media (max-width: 25rem) {
   .menuHamburguer {
