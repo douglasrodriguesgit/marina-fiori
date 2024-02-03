@@ -13,3 +13,13 @@
   margin-left: -6rem;
   margin-bottom: 3rem;
 }
+
+@media (max-width: 81rem) {
+  .titlePages {
+    margin-left: 7rem;
+  }
+
+  .titlePages::after {
+    margin-left: -1rem;
+  }
+}

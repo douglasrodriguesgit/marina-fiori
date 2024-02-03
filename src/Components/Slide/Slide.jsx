@@ -2,9 +2,15 @@ import React from "react";
 import styles from "./Slide.module.css";
 import ArrowLeft from "../../Assets/icons/arrowLeft.svg?react";
 import ArrowRight from "../../Assets/icons/arrowRight.svg?react";
+import primeiroSlide1 from "../../Assets/image/portfolio/left/slide1-left.jpg";
+import primeiroSlide2 from "../../Assets/image/portfolio/left/slide1-1.jpg";
+import primeiroSlide4 from "../../Assets/image/portfolio/left/slide1-4.jpg";
+import primeiroSlide3 from "../../Assets/image/portfolio/left/slide1-2.jpg";
+import primeiroSlide5 from "../../Assets/image/portfolio/left/slide1-right.jpg";
+import primeiroSlide6 from "../../Assets/image/portfolio/left/slide1-3.jpg";
 
 const Slide = ({ slides }) => {
-  const [slideActive, setSlideActive] = React.useState(1);
+  const [slideActive, setSlideActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
 
@@ -30,9 +36,23 @@ const Slide = ({ slides }) => {
       >
         {slides.map((slide) => (
           <div className={styles.item} key={slide.id}>
-            {slide.text}
-
-            
+            {slide.firstSlide && (
+              <section className={styles.contentSlide}>
+                <span className={styles.column1}>
+                  <img src={primeiroSlide1} alt="" />{" "}
+                </span>
+                <span className={styles.column2}>
+                  {" "}
+                  <img src={primeiroSlide2} alt="" />
+                  <img src={primeiroSlide3} alt="" />
+                  <img src={primeiroSlide4} alt="" />
+                  <img src={primeiroSlide6} alt="" />
+                </span>
+                <span lassName={styles.column3}>
+                  <img src={primeiroSlide5} alt="" />
+                </span>
+              </section>
+            )}
           </div>
         ))}
       </div>

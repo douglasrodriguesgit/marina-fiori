@@ -8,15 +8,15 @@ const Portfolio = () => {
   const slides = [
     {
       id: "slide 1",
-      text: "slide 1",
+      firstSlide: <div></div>,
     },
     {
       id: "slide 2",
-      text: "slide 2",
+      secondSlide: "",
     },
     {
       id: "slide 3",
-      text: "slide 3",
+      thirdSlide: "",
     },
   ];
   return (
