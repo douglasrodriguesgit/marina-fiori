@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "../Head";
+import TitlePages from "../TitlePages";
 
 const AboutMe = () => {
   return (
@@ -8,7 +9,7 @@ const AboutMe = () => {
         title="Sobre mim"
         description="Saiba mais sobre a Nail Designer Marina Fiori"
       />
-      <h1>Sobre mim</h1>
+      <TitlePages text="Me conheça" />
     </div>
   );
 };

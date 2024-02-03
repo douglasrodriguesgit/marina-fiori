@@ -66,6 +66,12 @@ img {
   color: var(--type-color-1);
 }
 
+.containerSection {
+  margin-top: 3rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -212,7 +218,7 @@ li .contact::after {
     border-bottom: solid 1px #dcdcdc;
   }
 
-  .menuOpen  {
+  .menuOpen {
     background-color: var(--type-color-0);
   }
 }
