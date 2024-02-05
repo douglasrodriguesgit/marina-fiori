@@ -1,6 +1,6 @@
 .titlePages {
   margin-left: 27rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .titlePages::after {
@@ -17,9 +17,21 @@
 @media (max-width: 81rem) {
   .titlePages {
     margin-left: 7rem;
+    margin-top: 0rem;
   }
 
   .titlePages::after {
     margin-left: -1rem;
+  }
+  @media (max-width: 72rem) {
+    .titlePages {
+      margin-left: 2rem;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .titlePages::after {
+    width: 12rem;
   }
 }

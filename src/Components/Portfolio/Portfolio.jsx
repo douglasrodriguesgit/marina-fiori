@@ -3,7 +3,6 @@ import Head from "../Head";
 import TitlePages from "../TitlePages";
 import Slide from "../Slide/Slide";
 
-
 const Portfolio = () => {
   const slides = [
     {
@@ -12,11 +11,11 @@ const Portfolio = () => {
     },
     {
       id: "slide 2",
-      secondSlide: "",
+      secondSlide: <div></div>,
     },
     {
       id: "slide 3",
-      thirdSlide: "",
+      thirdSlide: <div></div>,
     },
   ];
   return (
