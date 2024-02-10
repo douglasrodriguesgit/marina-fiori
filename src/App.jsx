@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Header from "./Components/Header";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Price from "./Components/Price/Price";
@@ -13,7 +13,7 @@ import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +24,7 @@ const App = () => {
           <Route path="whatsapp" element={<Whatsapp />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
