@@ -16,7 +16,10 @@ const Home = () => {
           <p className={`${styles.text} ${"subtitle"}`}>
             Nail Designer em Campinas
           </p>
-          <button className={styles.button}>Faça seu agendamento</button>
+
+          <button className={styles.button}>
+            <a href="https://wa.me/5519988006300"> Faça seu agendamento </a>
+          </button>
         </div>
         <div className={styles.image}></div>
       </section>

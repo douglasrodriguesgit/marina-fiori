@@ -31,8 +31,7 @@
 }
 
 .button:hover {
-  background-color: var(--type-color-3);
-  color: var(--type-color-0);
+  background-color: var(--type-color-0);
   transition: 0.3s;
   border-color: var(--type-color-3);
 }
@@ -40,8 +39,6 @@
 .imageDeco {
   height: 350px;
   width: 220px;
-  border-radius: 12.5rem 12.5rem 0.625rem 0.625rem;
-  position: relative;
 }
 
 .image {
