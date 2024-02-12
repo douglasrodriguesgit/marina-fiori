@@ -28,11 +28,11 @@ const Header = () => {
         <ul className={` ${open ? "menuOpen" : ""} `}>
           <li>
             {" "}
-            <NavLink to="/portfolio"> Portfólio</NavLink>{" "}
+            <NavLink to="/meconheca"> Me conheça</NavLink>{" "}
           </li>
           <li>
             {" "}
-            <NavLink to="/meconheca"> Me conheça</NavLink>{" "}
+            <NavLink to="/portfolio"> Portfólio</NavLink>{" "}
           </li>
           <li>
             {" "}
@@ -43,9 +43,10 @@ const Header = () => {
           </li>
 
           <li>
-            <NavLink className="contact" to="/whatsapp">
-              <Contact />
-            </NavLink>
+            <a className="contact" href="https://wa.me/5519988006300">
+              {" "}
+              <Contact />{" "}
+            </a>{" "}
           </li>
         </ul>
       </nav>

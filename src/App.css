@@ -122,14 +122,14 @@ img {
   transition: 0.3s;
 }
 
-.nav li a:global(.active)::after {
+.nav li .active::after {
   background-color: #95998a;
   height: 2px;
   width: 100%;
   margin-top: 4px;
 }
 
-li .contact::after {
+a.contact::after {
   display: none !important;
 }
 
@@ -207,18 +207,24 @@ li .contact::after {
     margin-top: 5px;
   }
 
+  .menuOpen {
+    z-index: 99999999;
+    background-color: var(--type-color-0);
+    width: 100%;
+  }
+
   .menuOpen a {
     display: block;
+    position: static;
     flex-wrap: initial;
     padding: 1rem 0;
     margin-top: 2rem;
     margin-bottom: 60px;
-    z-index: 1000;
-    width: 100%;
     height: calc(100vh -70px);
     visibility: visible;
     transition: 0.6s;
     border-bottom: solid 1px #dcdcdc;
+    z-index: 1000 !important;
   }
 
   .menuOpen {
@@ -236,7 +242,8 @@ li .contact::after {
   .title {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 3.8rem;
+    line-height: 70px;
   }
 
   .subtitle {
