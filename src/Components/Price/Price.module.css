@@ -8,7 +8,8 @@
 }
 
 .content {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  margin-left: -13rem;
 }
 
 .container h3 {
@@ -19,10 +20,11 @@
 }
 
 .container p {
-  max-width: 70ch;
+  max-width: 80ch;
   margin: 0.3rem auto;
   font-family: var(--type-fisrt-regular);
   font-size: 0.875rem;
+  margin: 0.5rem auto;
   color: var(--type-color-2);
 }
 
@@ -49,22 +51,63 @@
     background: none;
     justify-content: flex-start;
     margin-left: 2rem;
+    width: 800px;
   }
 
   .container h3 {
     margin: 1rem auto;
+    display: block !important;
   }
 
   .container p {
-    margin: 0.5rem auto;
+    margin: 1rem auto;
+  }
+
+  .content {
+    margin-top: 0px;
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 300px;
   }
 
   .container span::after {
     margin-bottom: 1rem;
   }
+}
 
-  .content {
-    margin-top: 0px;
-    margin-right: 1rem;
+@media (max-width: 450px) {
+  .container {
+    width: 200px;
+  }
+
+  .container span::after {
+    width: 150px;
+    margin-bottom: 0.5rem;
+  }
+
+  .container h3 {
+    margin: 0.5rem auto;
+    display: block !important;
+  }
+
+  .container p {
+    margin: 0.5rem auto;
+    font-size: 0.8rem;
   }
 }
