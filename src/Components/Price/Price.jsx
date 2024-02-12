@@ -26,7 +26,7 @@ const Price = () => {
             O alongamento de unha de fibra de vidro é uma técnica utilizada com
             filamentos de fibra de vidro que são moldados sobre a unha natural.O
             alongamento com fibra de vidro é mais resistente do que as unhas de
-            gel{" "}
+            gel.{" "}
           </p>
           <span>R$120,00</span>
 
