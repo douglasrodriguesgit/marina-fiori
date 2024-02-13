@@ -2,24 +2,15 @@ import React from "react";
 import styles from "./Slide.module.css";
 import ArrowLeft from "../../Assets/icons/arrowLeft.svg?react";
 import ArrowRight from "../../Assets/icons/arrowRight.svg?react";
-import primeiroSlide1 from "../../Assets/image/portfolio/left/slide1-left.jpg";
-import primeiroSlide2 from "../../Assets/image/portfolio/left/slide1-1.jpg";
-import primeiroSlide4 from "../../Assets/image/portfolio/left/slide1-4.jpg";
-import primeiroSlide3 from "../../Assets/image/portfolio/left/slide1-2.jpg";
-import primeiroSlide5 from "../../Assets/image/portfolio/left/slide1-right.jpg";
-import primeiroSlide6 from "../../Assets/image/portfolio/left/slide1-3.jpg";
-import segundoSlide1 from "../../Assets/image/portfolio/center/portfolio-1.jpg";
-import segundoSlide2 from "../../Assets/image/portfolio/center/portfolio-2.jpg";
-import segundoSlide3 from "../../Assets/image/portfolio/center/portfolio-3.jpg";
-import segundoSlide4 from "../../Assets/image/portfolio/center/portfolio-4.jpg";
-import segundoSlide5 from "../../Assets/image/portfolio/center/portfolio-5.jpg";
-import segundoSlide6 from "../../Assets/image/portfolio/center/portfolio-6.jpg";
-import terceiroSlide1 from "../../Assets/image/portfolio/right/slide3-1.jpg";
-import terceiroSlide2 from "../../Assets/image/portfolio/right/slide3-2.jpg";
-import terceiroSlide3 from "../../Assets/image/portfolio/right/slide3-3.jpg";
-import terceiroSlide4 from "../../Assets/image/portfolio/right/slide3-4.jpg";
-import terceiroSlide5 from "../../Assets/image/portfolio/right/slide3-5.jpg";
-import terceiroSlide6 from "../../Assets/image/portfolio/right/slide3-6.jpg";
+import segundoSlideImg1 from "../../Assets/image/testimony/testimony-1.jpg";
+import segundoSlideImg2 from "../../Assets/image/testimony/testimony-2.jpg";
+import segundoSlideImg3 from "../../Assets/image/testimony/testimony-3.jpg";
+import primeiroSlideImg4 from "../../Assets/image/testimony/testimony-4.jpg";
+import primeiroSlideImg5 from "../../Assets/image/testimony/testimony-5.jpg";
+import primeiroSlideImg6 from "../../Assets/image/testimony/testimony-6.jpg";
+import terceiroSlideImg7 from "../../Assets/image/testimony/testimony-7.jpg";
+import terceiroSlideImg8 from "../../Assets/image/testimony/testimony-8.jpg";
+import terceiroSlideImg9 from "../../Assets/image/testimony/testimony-9.jpg";
 
 const Slide = ({ slides }) => {
   const [slideActive, setSlideActive] = React.useState(1);
@@ -50,50 +41,110 @@ const Slide = ({ slides }) => {
           <div className={styles.item} key={slide.id}>
             {slide.firstSlide && (
               <section className={styles.contentSlide}>
-                <span>
-                  <img src={primeiroSlide5} alt="" />
-                  <img src={primeiroSlide3} alt="" />
-                </span>
-                <span>
-                  <img src={primeiroSlide2} alt="" />
-                  <img src={primeiroSlide1} alt="" />
-                </span>{" "}
-                <span>
-                  <img src={primeiroSlide4} alt="" />
-                  <img src={primeiroSlide6} alt="" />
-                </span>
+                <div>
+                  <img
+                    src={primeiroSlideImg4}
+                    alt="Depoimento Cliente Daniela"
+                  />
+                  <h3>Daniela</h3>
+                  <p>
+                    Sem comentários para o trabalho da Marina, excelente
+                    profissonal! ambiente muito acolhedor.
+                  </p>
+                </div>
+
+                <div>
+                  <img
+                    src={primeiroSlideImg5}
+                    alt="Depoimento Cliente Mariana"
+                  />
+                  <h3>Mariana</h3>
+                  <p>
+                    Sempre sou bem atendida, e fico muito feliz com o trabalho
+                    da Marina e os produtos de qualidade que ela usa.
+                  </p>
+                </div>
+
+                <div>
+                  <img
+                    src={primeiroSlideImg6}
+                    alt="Depoimento Cliente Camila"
+                  />
+                  <h3>Camila</h3>
+                  <p>
+                    Faço minhas unhas há anos com a Marina, ela sempre faz um
+                    trabalho impecável super recomendo.
+                  </p>
+                </div>
               </section>
             )}
             {slide.secondSlide && (
               <section className={styles.contentSlide}>
-                <span>
-                  <img src={segundoSlide1} alt="" />
-                  <img src={segundoSlide6} alt="" />
-                </span>
-                <span>
-                  <img src={segundoSlide2} alt="" />
-                  <img src={segundoSlide5} alt="" />
-                </span>{" "}
-                <span>
-                  <img src={segundoSlide3} alt="" />
-                  <img src={segundoSlide4} alt="" />
-                </span>
+                <div>
+                  <img src={segundoSlideImg1} alt="Depoimento Cliente Kátia" />
+                  <h3>Kátia</h3>
+                  <p>
+                    Eu amei o espaço e o atendimento no geral. Ao começar pela
+                    recepção que foi muito gentil e muita paciência.
+                  </p>
+                </div>
+
+                <div>
+                  <img src={segundoSlideImg2} alt="Depoimento Cliente Lorena" />
+                  <h3>Lorena</h3>
+                  <p>
+                    Studio super aconchegante! Todas funcionárias sempre muito
+                    simpáticas e atenciosas!
+                  </p>
+                </div>
+
+                <div>
+                  <img src={segundoSlideImg3} alt="Depoimento Cliente Flávia" />
+                  <h3>Flávia</h3>
+                  <p>
+                    Incrível! Estava a muito tempo sem fazer a unha por trauma,
+                    fiz esmaltaçào em gel e estou apaixonada.
+                  </p>
+                </div>
               </section>
             )}
             {slide.thirdSlide && (
               <section className={styles.contentSlide}>
-                <span>
-                  <img src={terceiroSlide1} alt="" />
-                  <img src={terceiroSlide2} alt="" />
-                </span>
-                <span>
-                  <img src={terceiroSlide3} alt="" />
-                  <img src={terceiroSlide4} alt="" />
-                </span>{" "}
-                <span>
-                  <img src={terceiroSlide5} alt="" />
-                  <img src={terceiroSlide6} alt="" />
-                </span>
+                <div>
+                  <img
+                    src={terceiroSlideImg7}
+                    alt="Depoimento Cliente Juliana"
+                  />
+                  <h3>Juliana</h3>
+                  <p>
+                    Tinha dificuldades para fazer á unha, depois que conheci a
+                    Marina nunca mais tive que procurar outra profissional.
+                  </p>
+                </div>
+
+                <div>
+                  <img
+                    src={terceiroSlideImg8}
+                    alt="Depoimento Cliente Marcela"
+                  />
+                  <h3>Marcela</h3>
+                  <p>
+                    Adoro o Studio, sempre com equipamentos e produtos de
+                    qualidade para a realização do trabalho.
+                  </p>
+                </div>
+
+                <div>
+                  <img
+                    src={terceiroSlideImg9}
+                    alt="Depoimento Cliente Patrícia"
+                  />
+                  <h3>Patrícia</h3>
+                  <p>
+                    Faço a manutenção com gel há anos com a Marina, e sempre
+                    recomendo para todas minhas amigas.
+                  </p>
+                </div>
               </section>
             )}
           </div>
