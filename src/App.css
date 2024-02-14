@@ -2,10 +2,8 @@
 
 body {
   --type-fisrt-regular: roboto, sans-serif;
-  --type-first-medium: roboto, sans-serif;
   --type-third: moon dance;
   background-color: var(--type-color-0);
-
   --type-color-0: #fff9f9;
   --type-color-1: #c9c7c1;
   --type-color-2: #bcbcb3;

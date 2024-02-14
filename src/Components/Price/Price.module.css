@@ -2,14 +2,13 @@
   background: url(../../Assets//image/price/bg.svg) no-repeat;
   width: 1200px;
   height: 500px;
-  margin: 0 auto;
+  margin: auto 60px auto auto ;
   display: grid;
   justify-content: center;
 }
 
 .content {
   margin-top: 2.5rem;
-  margin-left: -13rem;
 }
 
 .container h3 {

@@ -36,10 +36,11 @@ const Header = () => {
           </li>
           <li>
             {" "}
-            <NavLink to="/preco"> Preço</NavLink>{" "}
+            <NavLink to="/depoimentos">Depoimentos</NavLink>{" "}
           </li>
           <li>
-            <NavLink to="/depoimentos">Depoimentos</NavLink>{" "}
+            {" "}
+            <NavLink to="/preco"> Preço</NavLink>{" "}
           </li>
 
           <li>
