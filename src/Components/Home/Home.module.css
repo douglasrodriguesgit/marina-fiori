@@ -46,6 +46,7 @@
   background-color: var(--type-color-0);
   transition: 0.3s;
   border-color: var(--type-color-3);
+  font-weight: bolder;
 }
 
 .image {
