@@ -55,9 +55,9 @@ img {
 
 .title {
   font-family: var(--type-third);
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: var(--type-color-5);
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
 
 .subtitle {
@@ -230,22 +230,16 @@ a.contact::after {
   }
 }
 
+
+
 @media (max-width: 41rem) {
   .header .brand {
     margin-bottom: 0rem;
   }
-}
-
-@media (max-width: 41rem) {
   .title {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    font-size: 3.8rem;
     line-height: 70px;
-  }
-
-  .subtitle {
-    font-size: 1.2rem;
   }
 }
 
