@@ -2,7 +2,6 @@
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  
 }
 
 .containerSlide img {
@@ -16,13 +15,13 @@
   font-size: 2.5rem;
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 3rem;
   color: var(--type-color-2);
 }
 
 .text span a {
   color: var(--type-color-5);
-  border-bottom: solid 2px #000;
+  border-bottom: solid 2px var(--type-color-5);
 }
 
 @media (max-width: 560px) {

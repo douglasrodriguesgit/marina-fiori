@@ -1,52 +1,84 @@
 .footer {
+  background-color: var(--type-color-4);
+  padding: 1rem 2rem 1rem 2rem;
+  margin-top: 4rem;
+}
+
+.containerFooter {
   display: flex;
   justify-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: var(--type-color-4);
-  padding: 1rem 8rem;
-  margin-top: 8%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: roboto;
 }
 
 .titleFooter {
   font-family: var(--type-fisrt-regular);
   font-size: 1.25rem;
   font-weight: 400;
-  color: var(--type-color-0);
+  color: #ffffff;
 }
 
 .brand {
   margin-top: 0.5rem;
+  justify-content: center;
 }
 
-.openingHours {
-  margin-top: 0.5rem;
-  color: var(--type-color-1);
+.brandContent::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 3px;
 }
 
-.openingHours p {
-  margin-top: 0.5rem;
-}
-
-.openingHours span {
-  margin-left: 2rem;
-}
 .data {
-  margin-top: 0.5rem;
-  margin-left: -2rem;
+  max-width: 18ch;
+  margin-top: 1rem;
+}
+
+.data p {
+  color: #f7f7f7;
 }
 
 .redes {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
+  margin-left: 0px;
+  gap: 2rem;
+  justify-content: center;
+  border: solid 1px #f7f7f7;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
-.redes li:nth-child(2) {
-  margin-left: 0.94rem;
+.redes li {
+  cursor: pointer;
 }
 
-.redes li:nth-child(3) {
-  margin-left: 0.94rem;
+.openingHours {
+  margin-top: 0.5rem;
+}
+
+.openingHours p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #f7f7f7;
+}
+
+.openingHours span {
+  margin-left: 2rem;
+}
+
+.openingHours h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-weight: 200;
 }
 
 .map {
@@ -54,13 +86,17 @@
   width: 310px;
 }
 
-.data h4::after,
+.map p {
+  color: #f7f7f7;
+  margin-bottom: 0.5rem;
+}
+
 .map h4::after {
   content: "";
   display: block;
-  width: 9rem;
+  width: 6rem;
   height: 0.125rem;
-  background-color: #9a9f8d;
+  background-color: #fff;
   margin-top: 0.25rem;
   margin-bottom: 1.12rem;
 }
@@ -68,69 +104,48 @@
 .openingHours h4::after {
   content: "";
   display: block;
-  width: 16rem;
+  width: 15rem;
   height: 0.125rem;
-  background-color: #9a9f8d;
+  background-color: #fff;
   margin-top: 0.25rem;
   margin-bottom: 1.12rem;
 }
 
-@media (max-width: 81rem) {
-  .brand {
-    display: none;
-  }
-
-  .menuOpen footer {
-    width: 100%;
-  }
-}
-
-@media (max-width: 72rem) {
-  .openingHours {
-    margin-left: -6rem;
-  }
-}
-
-@media (max-width: 61rem) {
-  .footer {
+@media (max-width: 850px) {
+  .containerFooter {
     flex-direction: column;
   }
 
-  .data {
-    margin-left: -6rem;
-  }
-
-  .map {
-    margin-left: -6rem;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 41rem) {
-  .footer {
-    margin-top: 4rem;
-  }
-
-  .titleFooter {
-    font-size: 1rem;
-  }
-
-  .data h4::after,
-  .map h4::after,
-  .openingHours h4::after {
-    margin-bottom: 0.875rem;
-  }
-
-  .data {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  .openingHours {
+    margin-top: 1.5rem;
   }
 
   .map {
     margin-top: 1.5rem;
   }
+}
+
+@media (max-width: 350px) {
+  .map {
+    width: 200px;
+  }
+}
+
+@media (max-width: 275px) {
+  .map {
+    width: 150px;
+  }
+  .map h4::after {
+    display: none;
+  }
 
   .openingHours h4::after {
-    width: 14rem;
+    display: none;
+  }
+
+  .openingHours h4,
+  .map h4 {
+    border-bottom: solid 1px #fff;
+    margin-bottom: 1rem;
   }
 }
