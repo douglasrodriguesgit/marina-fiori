@@ -1,6 +1,8 @@
 .titlePages {
   margin-left: 27rem;
   margin-top: 2rem;
+  font-size: 3.5rem;
+  padding-right: .5rem;
 }
 
 .titlePages::after {
