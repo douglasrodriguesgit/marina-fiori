@@ -1,0 +1,42 @@
+.containerSlide {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.containerSlide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: var(--type-color-2);
+}
+
+.text span a {
+  color: var(--type-color-5);
+  border-bottom: solid 2px #000;
+}
+
+@media (max-width: 560px) {
+  .containerSlide img {
+    height: 300px;
+  }
+
+  .text h2 {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .containerSlide img {
+    height: 200px;
+  }
+}
