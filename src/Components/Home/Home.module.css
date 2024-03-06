@@ -55,7 +55,7 @@
   margin-bottom: -100px;
 }
 
-@media (max-width: 72rem) {
+@media (max-width: 80rem) {
   .info {
     margin-left: 2rem;
   }
@@ -64,6 +64,7 @@
 @media (max-width: 41rem) {
   .container {
     grid-template-columns: 1fr;
+    padding-right: 0.5rem;
   }
 
   .textInfo {

@@ -21,6 +21,8 @@ const Header = () => {
       </NavLink>
 
       <span
+        aria-expanded="false"
+        aria-controls="menuHamburguer"
         className={` ${"menuHamburguer"} ${ativo ? "menuClose" : ""} `}
         onClick={handleClick}
       ></span>
