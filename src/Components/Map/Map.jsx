@@ -21,7 +21,7 @@ const Map = () => {
             borderRadius: "0.5rem",
           }}
           center={position}
-          zoom={14}
+          zoom={11}
         >
           <Marker position={position} />
         </GoogleMap>
