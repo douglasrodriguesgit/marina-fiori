@@ -13,8 +13,7 @@ O protótipo do projeto foi realizado através do Figma, e escolhida uma paleta 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
- ### Deploy:
- **[Marina Fiori](https://douglasrodriguesgit.github.io/marina-fiori/#/)**
+ **[Deploy](https://douglasrodriguesgit.github.io/marina-fiori/#/)**
 
  ### Desenvolvido por:
  **[Douglas Rodrigues](https://douglasrodriguesgit.github.io/portfolio/index.html)**
