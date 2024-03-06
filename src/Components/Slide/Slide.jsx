@@ -13,7 +13,7 @@ import terceiroSlideImg8 from "../../Assets/image/testimony/testimony-8.jpg";
 import terceiroSlideImg9 from "../../Assets/image/testimony/testimony-9.jpg";
 
 const Slide = ({ slides }) => {
-  const [slideActive, setSlideActive] = React.useState(1);
+  const [slideActive, setSlideActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
 
@@ -31,7 +31,7 @@ const Slide = ({ slides }) => {
   }
 
   return (
-    <section className={styles.containerSlide}>
+    <section className={`${styles.containerSlide} ${"animeLeft"}`}>
       <div
         ref={contentRef}
         className={styles.content}

@@ -11,7 +11,7 @@ const Price = () => {
         description="valores dos serviços realizados de Marina Fiori"
       />
       <TitlePages text="Preços e Serviços" />
-      <section className={styles.container}>
+      <section className={`${styles.container} ${"animeLeft"}`}>
         <div className={styles.content}>
           <h3> Extensão de unha </h3>
           <p>

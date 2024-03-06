@@ -9,7 +9,7 @@ const Home = () => {
         title="Home"
         description="Home do site Marina Fiori Nail Designer"
       />
-      <section className={styles.container}>
+      <section className={`${styles.container} ${"animeLeft"}`}>
         <div className={styles.info}>
           <p className="subtitle">by Marina Fiori</p>
           <h1 className="title">Beleza e saúde das unhas</h1>

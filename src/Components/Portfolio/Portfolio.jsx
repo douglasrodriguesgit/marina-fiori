@@ -69,16 +69,9 @@ const Portfolio = () => {
         description="Conheça o portfolio de Marina Fiori"
       />
       <TitlePages text="Portfólio" />
-      <section className={styles.containerSlide}>
+      <section className={`${styles.containerSlide} ${"animeLeft"}`}>
         <Swiper slidesPerView={1} pagination={{ clickable: true }} navigation>
-          {/* {data.map((item) => (
-            <SwiperSlide key={item.id}>
-              <img src={item.image}
-              className={styles.item}
-              />
-            </SwiperSlide> */}
-
-          <SwiperSlide>
+                 <SwiperSlide>
             <img src={Imagem1} alt="unhas pintadas" />
           </SwiperSlide>
           <SwiperSlide>

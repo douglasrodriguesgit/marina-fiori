@@ -11,7 +11,7 @@ const AboutMe = () => {
         description="Saiba mais sobre a Nail Designer Marina Fiori"
       />
       <TitlePages text="Me conheça" />
-      <section className={styles.container}>
+      <section className={`${styles.container} ${"animeLeft"}`}>
         <div className={`${"title"} ${styles.brand}`}>
           <h3>Marina Fiori</h3>
         </div>
