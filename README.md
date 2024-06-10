@@ -3,7 +3,7 @@
 Projeto desenvolvido com a finalidade na captação de novos clientes e mostrar o trabalho da empreendedora
 
 ## Introdução
-O projeto foi realizado o protótipo através do Figma, optei por uma paleta de cores "candy-colors". No desenvolvimento foi utilizado React com JavaScript e na estilização CSS puro. Ultilizei react router dom no menu, consumi a API do google Maps no footer, foi utilizado useRef e useState no desenvolvimento do slide e do menu mobile.
+O protótipo do projeto foi realizado através do Figma, e escolhida uma paleta de cores "candy-colors". No desenvolvimento foi utilizado React com JavaScript e na estilização CSS puro. Ultilizei react router dom no menu, foi consumida a API do google Maps no footer e utilizado os hooks useRef e useState no desenvolvimento do slide e do menu mobile.
 
 ### Tecnologias usadas:
 
@@ -13,7 +13,7 @@ O projeto foi realizado o protótipo através do Figma, optei por uma paleta de 
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-
+ **[Deploy](https://douglasrodriguesgit.github.io/marina-fiori/#/)**
 
  ### Desenvolvido por:
  **[Douglas Rodrigues](https://douglasrodriguesgit.github.io/portfolio/index.html)**
