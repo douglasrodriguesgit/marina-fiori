@@ -4,7 +4,7 @@ import Brand from "../../Assets/icons/brandLight.svg?react";
 import WhatsApp from "../../Assets/redes/whatsappDark.svg?react";
 import Tiktok from "../../Assets/redes/tiktok.svg?react";
 import Instagram from "../../Assets/redes/instagram.svg?react";
-import Map from "../Map/Map";
+// import Map from "../Map/Map";
 
 const Footer = () => {
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
           <div className={styles.map}>
             <h4 className={styles.titleFooter}>Endereço</h4>
             <p>Rua Professor Flávio Wusterberg 1086 Campinas-SP</p>
-            <Map />
+            {/* <Map /> */}
           </div>
         </div>
       </div>

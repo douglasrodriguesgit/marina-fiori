@@ -1,0 +1,72 @@
+.header,
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.nav a {
+  cursor: pointer;
+}
+
+.header .brand {
+  margin-left: 3.75rem;
+  margin-right: 2.78rem;
+  margin-bottom: 0.5rem;
+}
+
+.header .links {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.nav li {
+  margin: 0 2.5rem;
+}
+
+li .contact {
+  margin-left: 12rem;
+}
+
+.nav li a::after {
+  content: "";
+  display: block;
+  background-color: #c9c7c1;
+  height: 2px;
+  width: 0px;
+  margin-top: 4px;
+}
+
+.nav li a:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.nav li a:global(.active)::after {
+  background-color: #95998a;
+  height: 2px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+li .contact::after {
+  display: none !important;
+}
+
+@media (max-width: 81rem) {
+  li .contact {
+    margin-left: 0rem;
+  }
+
+  .links {
+    display: none !important;
+  }
+}
